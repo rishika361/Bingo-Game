@@ -1,0 +1,223 @@
+/* Reset default margin and padding */
+body, h1 {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Set background color and font family */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.bingo-id {
+    
+    /* position: absolute; */
+    /* top: 175px;  */
+    /* left: 400px; */
+    color: black;
+    font-size: large;
+    /* font-weight: 600; */
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: underline;
+
+}
+
+
+#bingo-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+/* Style individual Bingo cards */
+.bingo-card {
+    width: 520px;
+    background-color: red;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+.strike-through {
+    text-decoration: line-through;    
+} 
+
+/* Style the Bingo card table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Style table headers (B, I, N, G, O) */
+th {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+/* Style Bingo numbers in cells */
+td {
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 27px;
+    border: 1px solid black;
+    /* font-weight: 545; */
+}
+
+td.selected {
+    background-color:red;
+    color: #fff;
+}
+
+.button-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; */
+     text-align: center;
+     margin-bottom: 30px;
+}
+
+
+/* Style the "Generate Bingo Card" button */
+.generate-button {   
+     /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: linear-gradient(to bottom, #0055a4, #003580);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: auto;
+}
+
+/* Style "Generate Bingo Card" button on hover */
+.generate-button:hover {
+    background-color: blue;
+}
+
+.reset-button {
+        margin-left: 150px;
+    /* margin-bottom: 30px; */
+    margin-top: 20px;
+    padding: 15px 35px;
+   background: linear-gradient(to bottom, #0055a4, #003580);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right: auto;
+}
+
+/* Style "Generate Bingo Card" button on hover */
+.generate-button:hover {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size:25px; 
+        margin-left: 120px;
+         
+    }
+
+    .bingo-id{
+        left:5px;
+        margin-bottom: 20px;
+        
+    }
+
+    table {
+        
+        width: 100%; 
+        overflow-y: hidden;
+    }
+    
+   
+ 
+     #bingo-card-container {
+        display: block;
+        margin: auto auto;
+        margin-top: 20px;
+       
+    } 
+    .bingo-card{
+        
+        width: 330px;
+        padding: 10px;
+        height: 350px;
+        margin: auto;
+        
+    }
+    th {
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+    td {
+        background-color: white;
+        text-align: center;
+        font-size: 18px;
+        padding: 13px;
+        border: 1px solid black;
+    }
+    
+  
+     
+    .generate-button {
+        /* margin-left: 530px; */
+        /* margin-bottom: 30px; */
+        margin-top: 20px;
+        padding: 15px 35px;
+      background: linear-gradient(to bottom, #0055a4, #003580);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        left: auto;
+    }
+
+       .reset-button {
+      margin-left: 50px;
+    /* margin-bottom: 30px; */
+    margin-top: 20px;
+    padding: 15px 35px;
+   background: linear-gradient(to bottom, #0055a4, #003580);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right: auto;
+       }
+     .button-container {
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+}

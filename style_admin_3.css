@@ -1,0 +1,364 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+    height: auto;
+}
+
+
+/* Design Nav Bar 
+nav{
+    background: linear-gradient(to bottom, #0055a4, #003580);
+    height: 80px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: black;
+    background: white;
+    transition: .5s;
+}
+.menu-btn{
+    font-size: 40px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+*/
+
+
+
+/* Design Title */
+.contact-head{
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    height: 35px;
+}
+
+/* Design play and show button line */
+.cont1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    height: 55px;
+    margin-bottom: 50px;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+}
+
+
+
+/* Button */
+button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: font-size 0.3s, color 0.3s;
+    margin: 10px;
+}
+button:hover {
+    color: #fff; 
+    font-size: 15px;
+}
+
+
+/* Add styles for your table and table cells */
+table.call-grid-manual {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+    
+}
+
+table.call-grid-manual td {
+    border: 5px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 22px;
+}
+
+table.call-grid-manual .col {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* footer 
+footer{
+    position: absolute;
+    background: linear-gradient(to top, #0055a4, #003580);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+*/
+
+
+@media (max-width: 900px){
+
+    label.logo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cont1 {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    nav{
+        background: blue;
+        
+    }
+
+    ul{
+         position: fixed;  
+        top: 75px;
+        left: -100%;
+        background: blue;
+        height: 500px;
+        width: 70%;
+        border-radius: 0px 10px;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+        margin-bottom: 20px;
+
+    }
+    nav ul li{
+        margin: 0px 0px;
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    a.active, a:hover{
+        color: white;
+        background: none;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    .footer-menu ul{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+}
+
+
+@media (max-width: 900px) {
+    .cont1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    
+    table.call-grid-manual {
+        width: 100%;
+        margin-bottom: 20px;
+        table-layout: auto;
+        height: 300px;
+    }
+
+    table.call-grid-manual td {
+        padding: 3px; 
+        font-size: 10px;
+    }
+
+    table.call-grid-manual .col {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+/* CSS for the modal */
+.modal-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-popup {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.count-main {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 15px;
+}
+.left-side {
+    flex-grow: 1; 
+}
+.right-side {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .cont1 {
+        flex-direction: column; 
+      }
+    
+      .center {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+     
+      #check-card-input,
+      #check-call-input {
+        width: 30%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+      }
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .count-table {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .count-table {
+      font-size: 14px;
+    }
+  }
+
+  /* Add styles to the Bingo Card table */
+.bingo-card-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Style table rows */
+.bingo-card-table tr {
+    height: 40px; /* Adjust as needed */
+}
+
+/* Style table cells (td) */
+.bingo-card-table td {
+    width: 40px; /* Adjust as needed */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 16px;
+}
